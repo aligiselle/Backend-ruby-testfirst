@@ -21,7 +21,7 @@ def first_word(sentence)
 end
 
 def titleize(words)
-    words.capitalize  # capitalize the first word in case it is part of the no words array
+    words.capitalize!  # capitalize the first word in case it is part of the no words array
     little_words = ["and", "or", "the", "over", "to", "the", "a", "but"]
     sentence = words.split(" ").map {|word| 
         if little_words.include?(word) 
